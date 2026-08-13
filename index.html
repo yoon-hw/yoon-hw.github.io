@@ -11,7 +11,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<style>
-			/* 헤더 크기와 간격 조정 */
+			/* 헤더 */
 			#header {
 				align-items: center;
 				padding-bottom: 0.6em;
@@ -27,18 +27,49 @@
 			}
 			#header .icons li {
 				padding-left: 1em;
+				display: inline-flex;
+				align-items: center;
+			}
+			#header .icons .cv-btn {
+				display: inline-block;
+				font-size: 0.65em;
+				padding: 0.9em 1.6em;
+				line-height: 1;
+				border: solid 1px #b8bfc4;
+				border-radius: 4px;
+				font-weight: 700;
+				letter-spacing: 0.15em;
+				text-transform: uppercase;
+				color: #7f888f;
+			}
+			#header .icons .cv-btn:hover {
+				background: #f56a6a;
+				border-color: #f56a6a;
+				color: #ffffff;
 			}
 			/* 배너 사진 */
+			#banner .content {
+				flex: 1 1 50%;
+				min-width: 0;
+			}
 			#banner .image.object {
-				width: 100%;
-				max-width: 260px;
-				margin: 0 auto;
+				flex: 1 1 50%;
+				width: 50% !important;
+				max-width: 50% !important;
+				margin: 0 0 0 2em;
 				border: 0;
 			}
 			#banner .image.object img {
 				width: 100%;
 				height: auto;
 				display: block;
+			}
+			@media screen and (max-width: 980px) {
+				#banner .image.object {
+					width: 60% !important;
+					max-width: 60% !important;
+					margin: 2em auto 0 auto;
+				}
 			}
 			/* 사이드바 메뉴 구분선 */
 			#menu > ul > li {
@@ -66,7 +97,7 @@
 								<header id="header">
 									<a href="index.html" class="logo"><strong>Hyewon (Yuna) Yoon</strong></a>
 									<ul class="icons">
-										<li><a href="https://docs.google.com/document/d/1tCOYtpmn_rLgjYKJo9NfnOVmmVBL2mR9/preview" target="_blank" style="display: inline-block; padding: 0.4em 1.1em; border: solid 1px #b8bfc4; border-radius: 4px; font-size: 0.6em; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: #7f888f; line-height: 1;">CV</a></li>
+										<li><a href="https://docs.google.com/document/d/1tCOYtpmn_rLgjYKJo9NfnOVmmVBL2mR9/preview" target="_blank" class="cv-btn">CV</a></li>
 										<li><a href="mailto:hw.yoon@tamu.edu" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
 										<li><a href="https://scholar.google.com/citations?user=x8iMoXkAAAAJ&amp;hl=ko" class="icon solid fa-graduation-cap"><span class="label">Google Scholar</span></a></li>
 										<li><a href="https://www.linkedin.com/in/hyewon-yoon-a876b215b/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
@@ -193,9 +224,6 @@
 										<li>Teaching Assistant, Evolving City (URPN 201), Texas A&amp;M University (Spring 2026)</li>
 										<li>Teaching Assistant, Urban Safety and Disaster Planning, Yonsei University (Fall 2021)</li>
 										<li>Teaching Assistant, Environmental Planning, Yonsei University (Spring 2021)</li>
-										<li>Guest Lecture, Urban Planning and Environment, URPN 361-700 Urban Issues, Texas A&amp;M University (Apr. 2026)</li>
-										<li>Guest Reviewer, Final Project, ARCH 405 Architectural Design I, Texas A&amp;M University (Dec. 2025)</li>
-										<li>Guest Reviewer, ARCH 605 Architectural Design I, Texas A&amp;M University (Sep. 2025)</li>
 									</ul>
 								</section>
 
@@ -207,14 +235,14 @@
 
 									<h3>Awards</h3>
 									<ul>
-										<li>First Place, Graduate Poster Competition in Architecture, Student Research Week, Texas A&amp;M University (Mar. 2026, Mar. 2025)</li>
+										<li>First Place, Graduate Poster Competition in Architecture, Student Research Week, Texas A&amp;M University (Mar. 2026, 2025)</li>
 										<li>First Place, Graduate Poster Competition, TxGIS Days, Texas A&amp;M University (Nov. 2025)</li>
 										<li>Best Paper Award, Korea Association of Geographic Information System Conference (Nov. 2021)</li>
 									</ul>
 
 									<h3>Fellowships and Grants</h3>
 									<ul>
-										<li>IDEAAL DR2 Fellow, University of Washington (Fall 2025, Spring 2026)</li>
+										<li><a href="https://cdrc.uw.edu/what-we-do/education-and-training/applied-learning-fellowships/" target="_blank">IDEAAL DR2 Fellow</a>, University of Washington (Fall 2025, Spring 2026)</li>
 										<li>Graduate Student Small Research Grant, RESI, Texas A&amp;M University (Fall 2024)</li>
 										<li>CyberTraining for Disaster Management, Natural Hazards Workshop (Spring 2024)</li>
 										<li>Idea Incubating Dissertation Fellowship, Yonsei University (Fall 2022)</li>
