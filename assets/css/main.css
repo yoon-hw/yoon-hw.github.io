@@ -2277,3 +2277,27 @@ button,
 	height: auto;
 	object-fit: contain;
 }
+#topnav {
+	position: sticky;
+	top: 0;
+	z-index: 100;
+	background: #ffffff;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2.5em;
+	padding: 1.2em 0;
+	margin-bottom: 2em;
+	border-bottom: solid 1px rgba(210,215,217,0.75);
+}
+#topnav a {
+	font-family: "Roboto Slab", serif;
+	font-weight: 700;
+	font-size: 0.8em;
+	letter-spacing: 0.15em;
+	text-transform: uppercase;
+	color: #3d4449;
+	border-bottom: none;
+}
+#topnav a:hover {
+	color: #f56a6a;
+}
