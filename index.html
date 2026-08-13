@@ -22,6 +22,10 @@
 				white-space: nowrap;
 				max-width: none;
 			}
+			#header .icons {
+				display: flex;
+				align-items: center;
+			}
 			#header .icons a {
 				font-size: 1.35em;
 			}
@@ -29,22 +33,24 @@
 				padding-left: 1em;
 				display: inline-flex;
 				align-items: center;
+				line-height: 1;
 			}
 			#header .icons .cv-btn {
-				display: inline-block;
-				font-size: 0.65em;
-				padding: 0.9em 1.6em;
+				display: inline-flex;
+				align-items: center;
+				font-size: 0.85em;
+				font-weight: 800;
+				padding: 0.75em 1.4em;
 				line-height: 1;
 				border: solid 1px #b8bfc4;
 				border-radius: 4px;
-				font-weight: 700;
 				letter-spacing: 0.15em;
 				text-transform: uppercase;
 				color: #7f888f;
 			}
 			#header .icons .cv-btn:hover {
-				background: #f56a6a;
-				border-color: #f56a6a;
+				background: #2c4a7c;
+				border-color: #2c4a7c;
 				color: #ffffff;
 			}
 			/* 배너 사진 */
@@ -74,6 +80,7 @@
 			/* 사이드바 메뉴 구분선 */
 			#menu > ul > li {
 				border-top: solid 1px rgba(210,215,217,0.75) !important;
+				border-bottom: 0 !important;
 				margin: 0.5em 0 0 0 !important;
 				padding: 0.5em 0 0 0 !important;
 			}
@@ -81,6 +88,13 @@
 				border-top: 0 !important;
 				margin-top: 0 !important;
 				padding-top: 0 !important;
+			}
+			#menu > ul {
+				border-bottom: 0 !important;
+				margin-bottom: 0 !important;
+			}
+			#menu {
+				border-bottom: 0 !important;
 			}
 		</style>
 	</head>
@@ -124,34 +138,26 @@
 									<header class="major">
 										<h2>Research</h2>
 									</header>
-									<div class="features">
+									<div class="posts">
 										<article>
-											<span class="icon solid fa-city"></span>
-											<div class="content">
-												<h3>Environmental Health</h3>
-												<p>Linking environmental hazards and neighborhood conditions to health outcomes, including work on historical redlining, social vulnerability, and cancer-related hospital utilization in Texas.</p>
-											</div>
+											<a href="#" class="image"><img src="images/research01.jpg" alt="" /></a>
+											<h3>Measuring Neighborhood Physical Disorder after Hurricanes</h3>
+											<p>A two-step deep learning pipeline detects physical disorder from Google Street View imagery, tracking how neighborhood conditions in Houston shifted before and after Hurricane Harvey and how unevenly those trajectories played out.</p>
 										</article>
 										<article>
-											<span class="icon solid fa-tree"></span>
-											<div class="content">
-												<h3>Built Environment</h3>
-												<p>Measuring green exposure, park accessibility, and physical disorder through street-level imagery and large-scale mobility data.</p>
-											</div>
+											<a href="#" class="image"><img src="images/research02.jpg" alt="" /></a>
+											<h3>Redlining, Social Vulnerability, and Hospital Utilization</h3>
+											<p>Linking historical redlining grades and the Social Vulnerability Index to cancer-related hospital utilization across Texas, examining how past housing policy shapes present-day health outcomes.</p>
 										</article>
 										<article>
-											<span class="icon solid fa-microchip"></span>
-											<div class="content">
-												<h3>Urban Computing</h3>
-												<p>Computer vision, deep learning, and explainable machine learning applied to urban imagery and mobility datasets.</p>
-											</div>
+											<a href="#" class="image"><img src="images/research03.jpg" alt="" /></a>
+											<h3>Park Access and Visitation in Austin</h3>
+											<p>Using smartphone mobility data with explainable machine learning to reveal how highways act as barriers to park visitation and how tree structure and composition shape where people go.</p>
 										</article>
 										<article>
-											<span class="icon solid fa-house-damage"></span>
-											<div class="content">
-												<h3>Disaster Recovery</h3>
-												<p>Post-disaster recovery trajectories, critical infrastructure interdependency, and hazard planning, with Hurricane Harvey in Houston as a primary case.</p>
-											</div>
+											<a href="#" class="image"><img src="images/research04.jpg" alt="" /></a>
+											<h3>Green Exposure for Pedestrians</h3>
+											<p>Estimating street-level green exposure from Google Street View imagery using deep learning, and mapping the resulting inequality in access to urban greenery.</p>
 										</article>
 									</div>
 								</section>
@@ -235,7 +241,7 @@
 
 									<h3>Awards</h3>
 									<ul>
-										<li>First Place, Graduate Poster Competition in Architecture, Student Research Week, Texas A&amp;M University (Mar. 2026, 2025)</li>
+										<li>First Place, Graduate Poster Competition in Architecture, Student Research Week, Texas A&amp;M University (Mar. 2026, Mar. 2025)</li>
 										<li>First Place, Graduate Poster Competition, TxGIS Days, Texas A&amp;M University (Nov. 2025)</li>
 										<li>Best Paper Award, Korea Association of Geographic Information System Conference (Nov. 2021)</li>
 									</ul>
@@ -268,7 +274,7 @@
 										<li><a href="#publications">Publications</a></li>
 										<li><a href="#presentations">Presentations</a></li>
 										<li><a href="#teaching">Teaching</a></li>
-										<li><a href="#awards">Awards</a></li>
+										<li><a href="#awards">Awards and Fellowships</a></li>
 										<li><a href="https://docs.google.com/document/d/1tCOYtpmn_rLgjYKJo9NfnOVmmVBL2mR9/preview" target="_blank">CV</a></li>
 									</ul>
 								</nav>
