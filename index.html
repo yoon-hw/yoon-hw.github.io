@@ -10,6 +10,48 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			/* 헤더 크기와 간격 조정 */
+			#header {
+				align-items: center;
+				padding-bottom: 0.6em;
+				margin-bottom: 2.5em;
+			}
+			#header .logo {
+				font-size: 1.35em;
+				white-space: nowrap;
+				max-width: none;
+			}
+			#header .icons a {
+				font-size: 1.35em;
+			}
+			#header .icons li {
+				padding-left: 1em;
+			}
+			/* 배너 사진 */
+			#banner .image.object {
+				width: 100%;
+				max-width: 260px;
+				margin: 0 auto;
+				border: 0;
+			}
+			#banner .image.object img {
+				width: 100%;
+				height: auto;
+				display: block;
+			}
+			/* 사이드바 메뉴 구분선 */
+			#menu > ul > li {
+				border-top: solid 1px rgba(210,215,217,0.75) !important;
+				margin: 0.5em 0 0 0 !important;
+				padding: 0.5em 0 0 0 !important;
+			}
+			#menu > ul > li:first-child {
+				border-top: 0 !important;
+				margin-top: 0 !important;
+				padding-top: 0 !important;
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 
@@ -22,14 +64,14 @@
 
 							<!-- Header -->
 								<header id="header">
-									<a href="index.html" class="logo" style="white-space: nowrap; overflow: visible; text-overflow: clip; flex-shrink: 0; flex-grow: 0; max-width: none;"><strong>Hyewon (Yuna) Yoon</strong></a>
+									<a href="index.html" class="logo"><strong>Hyewon (Yuna) Yoon</strong></a>
 									<ul class="icons">
-										<ul class="icons">
-											<li><a href="mailto:hw.yoon@tamu.edu" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-											<li><a href="https://scholar.google.com/citations?user=x8iMoXkAAAAJ&amp;hl=ko" class="icon solid fa-graduation-cap"><span class="label">Google Scholar</span></a></li>
-											<li><a href="https://www.linkedin.com/in/hyewon-yoon-a876b215b/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-											<li><a href="https://orcid.org/0009-0005-5833-0701" class="icon brands fa-orcid"><span class="label">ORCID</span></a></li>
-										</ul>
+										<li><a href="https://docs.google.com/document/d/1tCOYtpmn_rLgjYKJo9NfnOVmmVBL2mR9/preview" target="_blank" style="display: inline-block; padding: 0.4em 1.1em; border: solid 1px #b8bfc4; border-radius: 4px; font-size: 0.6em; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: #7f888f; line-height: 1;">CV</a></li>
+										<li><a href="mailto:hw.yoon@tamu.edu" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+										<li><a href="https://scholar.google.com/citations?user=x8iMoXkAAAAJ&amp;hl=ko" class="icon solid fa-graduation-cap"><span class="label">Google Scholar</span></a></li>
+										<li><a href="https://www.linkedin.com/in/hyewon-yoon-a876b215b/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+										<li><a href="https://orcid.org/0009-0005-5833-0701" class="icon brands fa-orcid"><span class="label">ORCID</span></a></li>
+									</ul>
 								</header>
 
 							<!-- Banner -->
@@ -39,48 +81,145 @@
 											<h1>Hyewon (Yuna) Yoon</h1>
 											<p>Ph.D. Student, Urban and Regional Science, Texas A&amp;M University</p>
 										</header>
-										<p>I am a Ph.D. student in Urban and Regional Science at Texas A&amp;M University, My research sits at the intersection of environmental health, the built environment, and urban computing. I study how disasters and environmental hazards reshape neighborhoods, and what those changes mean for public health. My work combines Generative AI, computer vision, street-level imagery, and geospatial data science to measure built-environment conditions after disasters.</p>
+										<p>I am a Ph.D. student in Urban and Regional Science at Texas A&amp;M University. My research sits at the intersection of environmental health, the built environment, and urban computing. I study how disasters and environmental hazards reshape neighborhoods, and what those changes mean for public health. My work combines generative AI, computer vision, street-level imagery, and geospatial data science to measure built-environment conditions after disasters.</p>
 									</div>
 									<span class="image object">
-										<img src="images/pic10.jpg" alt="" />
+										<img src="images/pic10.jpg" alt="Hyewon Yoon" />
 									</span>
 								</section>
 
-							<!-- Section -->
-								<section>
+							<!-- Research -->
+								<section id="research">
 									<header class="major">
 										<h2>Research</h2>
 									</header>
 									<div class="features">
 										<article>
-											<span class="icon fa-gem"></span>
+											<span class="icon solid fa-city"></span>
 											<div class="content">
-												<h3>Portitor ullamcorper</h3>
-												<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+												<h3>Environmental Health</h3>
+												<p>Linking environmental hazards and neighborhood conditions to health outcomes, including work on historical redlining, social vulnerability, and cancer-related hospital utilization in Texas.</p>
 											</div>
 										</article>
 										<article>
-											<span class="icon solid fa-paper-plane"></span>
+											<span class="icon solid fa-tree"></span>
 											<div class="content">
-												<h3>Sapien veroeros</h3>
-												<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+												<h3>Built Environment</h3>
+												<p>Measuring green exposure, park accessibility, and physical disorder through street-level imagery and large-scale mobility data.</p>
 											</div>
 										</article>
 										<article>
-											<span class="icon solid fa-rocket"></span>
+											<span class="icon solid fa-microchip"></span>
 											<div class="content">
-												<h3>Quam lorem ipsum</h3>
-												<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+												<h3>Urban Computing</h3>
+												<p>Computer vision, deep learning, and explainable machine learning applied to urban imagery and mobility datasets.</p>
 											</div>
 										</article>
 										<article>
-											<span class="icon solid fa-signal"></span>
+											<span class="icon solid fa-house-damage"></span>
 											<div class="content">
-												<h3>Sed magna finibus</h3>
-												<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+												<h3>Disaster Recovery</h3>
+												<p>Post-disaster recovery trajectories, critical infrastructure interdependency, and hazard planning, with Hurricane Harvey in Houston as a primary case.</p>
 											</div>
 										</article>
 									</div>
+								</section>
+
+							<!-- Publications -->
+								<section id="publications">
+									<header class="major">
+										<h2>Publications</h2>
+									</header>
+
+									<h3>Peer-Reviewed Journal Articles</h3>
+									<ul>
+										<li>Guo, Z., Song, Y., Lu, H., Zhu, R., Zhang, Y., <strong>Yoon, H.</strong>, &amp; Zhang, B. (2026). Quantifying the recreational value of urban parks using smartphone mobility data. <em>Computational Urban Science</em>, 6(1), 23.</li>
+										<li><strong>Yoon, H.</strong>, Guo, Z., Song, Y., Lu, H., &amp; Zhang, Y. (2025). Highway as barriers to park visitation: A fixed effects analysis using mobility data. <em>Urban Science</em>, 9(12), 512.</li>
+										<li>Choo, M., <strong>Yoon, H.</strong>, &amp; Yoon, D. K. (2024). Investigating consistent effects of the urban built environment and human mobility on COVID-19 outbreaks: A comprehensive meta-analysis. <em>Sustainable Cities and Society</em>, 102, 105226.</li>
+										<li>Choo, M., Choi, Y. W., <strong>Yoon, H.</strong>, Bae, S. B., &amp; Yoon, D. K. (2023). Citizen engagement in smart city planning: The case of living labs in South Korea. <em>Urban Planning</em>, 8(2).</li>
+										<li>Choi, Y. W., <strong>Yoon, H.</strong>, Choo, M., &amp; Yoon, D. K. (2022). A study on precision of 3D spatial model of a highly dense urban area based on drone images. <em>Journal of the Korean Society of Surveying, Geodesy, Photogrammetry and Cartography</em>, 40(2), 69&ndash;77.</li>
+									</ul>
+
+									<h3>Under Review</h3>
+									<ul>
+										<li><strong>Yoon, H.</strong>, Choo, M., &amp; Yoon, D. K. Greenery for pedestrians: Green exposure analysis using Google Street View imagery.</li>
+										<li><strong>Yoon, H.</strong>, Li, D., Newman, G., Rosenheim, N., Yu, S., &amp; Meyer, M. Association of historical redlining and social vulnerability index (SVI) with cancer-related hospital utilization: The case of Texas, USA.</li>
+										<li>Guo, Z., Song, Y., <strong>Yoon, H.</strong>, Zhang, Y., &amp; Zhang, B. Quantifying the recreational value of urban parks and its determinants: A big data analysis using smartphone mobility data.</li>
+										<li>Zhang, Y., Wang, J.-Y., <strong>Yoon, H.</strong>, Guo, Z., Song, Y., &amp; Zhang, W. Sequential protective actions in coastal housing markets: Examining the relationship between evacuation behavior and home-selling intentions.</li>
+										<li>Jeong, J., <strong>Yoon, H.</strong>, &amp; Guo, Z. How tree structure, composition, and configuration influence summer land surface temperature in neighborhood parks.</li>
+									</ul>
+								</section>
+
+							<!-- Presentations -->
+								<section id="presentations">
+									<header class="major">
+										<h2>Presentations</h2>
+									</header>
+
+									<h3>Oral Presentations</h3>
+									<ul>
+										<li><strong>Yoon, H.</strong>, &amp; Li, D. (2026). The impact of a disaster on neighborhood physical disorder: Post-disaster recovery trajectories and its determinants. ACSP, Pittsburgh, PA. <em>(forthcoming)</em></li>
+										<li>Jeong, J., <strong>Yoon, H.</strong>, &amp; Guo, Z. (2026). How tree structure, composition, and configuration influence summer land surface temperature in neighborhood parks. ACSP, Pittsburgh, PA. <em>(forthcoming)</em></li>
+										<li>Guo, Z., <strong>Yoon, H.</strong>, Jeong, J., Zhang, B., &amp; Song, Y. (2026). Revealing tree&ndash;visitation relationships across park types: Mobility data and explainable machine learning evidence from Austin, Texas. ACSP, Pittsburgh, PA. <em>(forthcoming)</em></li>
+										<li><strong>Yoon, H.</strong>, Guo, Z., Song, Y., Lu, H., &amp; Zhang, Y. (2025). Urban segregation and park visitation: A longitudinal and place-based study in Austin, Texas. ACSP, Minneapolis, MN.</li>
+										<li><strong>Yoon, H.</strong>, Li, D., Newman, G., Rosenheim, N., Yu, S., &amp; Meyer, M. (2024). Association of historical redlining and social vulnerability index (SVI) with cancer-related hospital utilization: The case of Texas. ACSP, Seattle, WA.</li>
+										<li><strong>Yoon, H.</strong> (2024). Green space inequality in urban areas: Street greenery analysis using green view index. AAG, Honolulu, HI.</li>
+										<li>Choo, M., <strong>Yoon, H.</strong>, &amp; Yoon, D. K. (2023). Relationship between COVID-19 outbreaks and urban density using meta-analysis. Korean Society of Hazard Mitigation Conference, Seoul, South Korea.</li>
+										<li><strong>Yoon, H.</strong>, Choo, M., &amp; Yoon, D. K. (2023). Analysis of flood risk on roads using Bayesian networks: Focusing on the interdependence of sewage and road networks. Korean Society of Hazard Mitigation Conference, Seoul, South Korea.</li>
+										<li><strong>Yoon, H.</strong>, &amp; Yoon, D. K. (2022). Analysis of green inequality in urban areas: Comparing natural and park greenery with green view index using deep learning in Seoul. Korean Association of Geographic Information Studies Conference, Jeju, South Korea.</li>
+										<li><strong>Yoon, H.</strong>, Choo, M., &amp; Yoon, D. K. (2022). Examining the relationship between urban compactness and carbon emissions. International Conference of Asia Pacific Planning Societies, Nagasaki, Japan.</li>
+										<li><strong>Yoon, H.</strong>, Choi, Y. W., &amp; Yoon, D. K. (2022). Analysis of location accuracy of city 3D models using drone aerial photography. Korean Society of Hazard Mitigation Conference, Seoul, South Korea.</li>
+										<li><strong>Yoon, H.</strong>, &amp; Yoon, D. K. (2021). Constructing a digital twin base map using drones and analyzing urban flooding. Korean Society of Disaster Information Conference, Seoul, South Korea.</li>
+										<li>Hwang, Y., <strong>Yoon, H.</strong>, Bae, S., Kim, W., &amp; Yoon, D. K. (2021). An analysis of combustion spread characteristics and effects of urban fires. Korean Society of Hazard Mitigation Conference, Seoul, South Korea.</li>
+									</ul>
+
+									<h3>Poster Presentations</h3>
+									<ul>
+										<li><strong>Yoon, H.</strong>, &amp; Li, D. (2026). Environmental risk perception among youth in a frontline industrial city: Evidence from youth-led walking interviews. TiCER, College Station, TX.</li>
+										<li><strong>Yoon, H.</strong>, &amp; Li, D. (2025). Mapping neighborhood physical disorder using computer vision: Implications for public health after hurricanes. AGU, New Orleans, LA.</li>
+										<li><strong>Yoon, H.</strong>, &amp; Guo, Z. (2025). Greenery for pedestrians: Green exposure analysis using Google Street View imagery. TxGIS Days, College Station, TX.</li>
+										<li><strong>Yoon, H.</strong>, Li, D., Newman, G., Rosenheim, N., Yu, S., &amp; Meyer, M. (2025). Association of historical redlining and the social vulnerability index with cancer hospital utilization: Evidence from Texas. TiCER, College Station, TX.</li>
+										<li><strong>Yoon, H.</strong>, Li, D., Newman, G., Rosenheim, N., Yu, S., &amp; Meyer, M. (2025). Comparing patterns of the social vulnerability index across census tracts and ZIP Code Tabulation Areas in Texas. Student Research Week, College Station, TX.</li>
+										<li><strong>Yoon, H.</strong>, Li, D., Newman, G., Rosenheim, N., Yu, S., &amp; Meyer, M. (2024). Association of historical redlining and the social vulnerability index with cancer hospital utilization. Natural Hazards Workshop, Colorado.</li>
+									</ul>
+								</section>
+
+							<!-- Teaching -->
+								<section id="teaching">
+									<header class="major">
+										<h2>Teaching</h2>
+									</header>
+									<ul>
+										<li>Teaching Assistant, Evolving City (URPN 201), Texas A&amp;M University (Spring 2026)</li>
+										<li>Teaching Assistant, Urban Safety and Disaster Planning, Yonsei University (Fall 2021)</li>
+										<li>Teaching Assistant, Environmental Planning, Yonsei University (Spring 2021)</li>
+										<li>Guest Lecture, Urban Planning and Environment, URPN 361-700 Urban Issues, Texas A&amp;M University (Apr. 2026)</li>
+										<li>Guest Reviewer, Final Project, ARCH 405 Architectural Design I, Texas A&amp;M University (Dec. 2025)</li>
+										<li>Guest Reviewer, ARCH 605 Architectural Design I, Texas A&amp;M University (Sep. 2025)</li>
+									</ul>
+								</section>
+
+							<!-- Awards -->
+								<section id="awards">
+									<header class="major">
+										<h2>Awards and Fellowships</h2>
+									</header>
+
+									<h3>Awards</h3>
+									<ul>
+										<li>First Place, Graduate Poster Competition in Architecture, Student Research Week, Texas A&amp;M University (Mar. 2026, Mar. 2025)</li>
+										<li>First Place, Graduate Poster Competition, TxGIS Days, Texas A&amp;M University (Nov. 2025)</li>
+										<li>Best Paper Award, Korea Association of Geographic Information System Conference (Nov. 2021)</li>
+									</ul>
+
+									<h3>Fellowships and Grants</h3>
+									<ul>
+										<li>IDEAAL DR2 Fellow, University of Washington (Fall 2025, Spring 2026)</li>
+										<li>Graduate Student Small Research Grant, RESI, Texas A&amp;M University (Fall 2024)</li>
+										<li>CyberTraining for Disaster Management, Natural Hazards Workshop (Spring 2024)</li>
+										<li>Idea Incubating Dissertation Fellowship, Yonsei University (Fall 2022)</li>
+										<li>Innovative Talent Education Program for Smart City, Yonsei University (Fall 2021, Fall 2022)</li>
+									</ul>
 								</section>
 
 						</div>
@@ -90,19 +229,11 @@
 					<div id="sidebar">
 						<div class="inner">
 
-							<!-- Search -->
-								<section id="search" class="alt">
-									<form method="post" action="#">
-										<input type="text" name="query" id="query" placeholder="Search" />
-									</form>
-								</section>
-
 							<!-- Menu -->
 								<nav id="menu">
 									<header class="major">
 										<h2>Menu</h2>
 									</header>
-									<ul>
 									<ul>
 										<li><a href="#banner">About</a></li>
 										<li><a href="#research">Research</a></li>
@@ -114,21 +245,23 @@
 									</ul>
 								</nav>
 
-
-							<!-- Section -->
+							<!-- Contact -->
 								<section>
 									<header class="major">
 										<h2>Get in touch</h2>
 									</header>
 									<p>Feel free to reach out about research, collaboration, or anything else.</p>
 									<ul class="contact">
-										<li class="icon solid fa-envelope"><a href="#">hw.yoon@tamu.edu</a></li>
+										<li class="icon solid fa-envelope"><a href="mailto:hw.yoon@tamu.edu">hw.yoon@tamu.edu</a></li>
+										<li class="icon solid fa-home">Urban and Regional Science<br />
+										Texas A&amp;M University<br />
+										College Station, TX 77843</li>
 									</ul>
 								</section>
 
 							<!-- Footer -->
 								<footer id="footer">
-									<p class="copyright">&copy;Hyewon Yoon: <a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+									<p class="copyright">&copy; Hyewon Yoon. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
 								</footer>
 
 						</div>
