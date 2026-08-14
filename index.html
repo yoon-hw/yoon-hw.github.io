@@ -48,6 +48,19 @@
 				color: #ffffff !important;
 			}
 
+			/* ===== 이미지 드래그 방지 ===== */
+			img {
+				-webkit-user-drag: none;
+				-khtml-user-drag: none;
+				-moz-user-drag: none;
+				-o-user-drag: none;
+				user-drag: none;
+				-webkit-user-select: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+				user-select: none;
+			}
+
 			/* ===== 헤더 ===== */
 			#header {
 				align-items: center;
@@ -176,7 +189,7 @@
 				}
 			}
 
-			/* Research 이미지 크기 통일 */
+			/* ===== Research 이미지 크기 통일 ===== */
 			#research .posts article .image {
 				display: block;
 				width: 100%;
@@ -499,6 +512,16 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+		<!-- 이미지 우클릭 저장 방지 -->
+			<script>
+				document.addEventListener('contextmenu', function(e) {
+					if (e.target.tagName === 'IMG') e.preventDefault();
+				});
+				document.addEventListener('dragstart', function(e) {
+					if (e.target.tagName === 'IMG') e.preventDefault();
+				});
+			</script>
 
 	</body>
 </html>
